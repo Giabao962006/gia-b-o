@@ -1,0 +1,22 @@
+import turtle
+
+def draw_heart():
+    t = turtle.Turtle()
+    t.speed(4)
+    t.color("blue", "blue")  # Màu ngoài và màu fill của hình trái tim
+    t.begin_fill()
+
+    t.left(140)
+    t.forward(180)
+    t.circle(-90, 200)
+    t.left(120)
+    t.circle(-90, 200)
+    t.forward(180)
+
+    t.end_fill()
+    t.hideturtle()
+
+    turtle.done()
+
+# Gọi hàm để vẽ hình trái tim
+draw_heart()
